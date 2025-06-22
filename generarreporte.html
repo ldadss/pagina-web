@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Generar Reporte - AWS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/generar-reporte.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+  <div class="reporte-container bg-white p-8 rounded-2xl shadow-lg w-full max-w-xl">
+    <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">Generar Reporte</h2>
+
+    <form id="formReporte" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Tipo de reporte</label>
+        <select name="tipo" required class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg">
+          <option value="">Seleccione</option>
+          <option value="menores">Menores registrados</option>
+          <option value="vehiculos">Vehículos registrados</option>
+          <option value="general">Reporte general</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Formato</label>
+        <select name="formato" required class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg">
+          <option value="">Seleccione</option>
+          <option value="pdf">PDF</option>
+          <option value="excel">Excel</option>
+        </select>
+      </div>
+      <button type="submit"
+              class="w-full py-2 px-4 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-lg">
+        Generar
+      </button>
+    </form>
+  </div>
+
+  <script src="js/generar-reporte.js"></script>
+</body>
+</html>

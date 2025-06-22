@@ -1,0 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: url('https://source.unsplash.com/1600x900/?border-crossing,chile') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 0;
+}
+main, form, .contenedor-login {
+  position: relative;
+  z-index: 10;
+}

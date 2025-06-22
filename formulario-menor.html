@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar Menor - AWS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+  <div class="form-container bg-white p-8 rounded-2xl shadow-lg w-full max-w-lg">
+    <h2 class="text-2xl font-bold text-blue-900 mb-6 text-center">Registrar Menor</h2>
+
+    <form id="formMenor" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">RUN del menor</label>
+        <input type="text" name="run" required placeholder="Ej: 12345678-9"
+               class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nombres</label>
+        <input type="text" name="nombres" required class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Apellidos</label>
+        <input type="text" name="apellidos" required class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Fecha de nacimiento</label>
+        <input type="date" name="fecha_nac" required class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Certificado de autorización (PDF)</label>
+        <input type="file" name="certificado" accept=".pdf" required
+               class="w-full mt-1 border border-gray-300 p-2 rounded-lg">
+      </div>
+      <button type="submit"
+              class="w-full py-2 px-4 bg-blue-700 hover:bg-blue-800 text-white font-semibold rounded-lg">
+        Guardar
+      </button>
+    </form>
+  </div>
+
+  <script src="js/formulario.js"></script>
+</body>
+</html>
